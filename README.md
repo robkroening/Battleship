@@ -1,6 +1,6 @@
 # Battleship
-Game Flow: Setup → Gameplay → Winning the Game
 This project will mimic the classic board game of battleship. It will be coded in TypeScript, rendered in the browser using HTML, and styled with CSS.
+## Game Flow: Setup → Gameplay → Winning the Game
 
 Step 1: Define the project
 What is the project? - This project will mimic the classic board game of battleship. It will be coded in TypeScript, rendered in the browser using HTML, and styled with CSS.
