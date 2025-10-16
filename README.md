@@ -3,10 +3,10 @@ This project will mimic the classic board game of battleship. It will be coded i
 ## Game Flow: Setup → Gameplay → Winning the Game
 
 ### Step 1: Define the project
-What is the project? - This project will mimic the classic board game of battleship. It will be coded in TypeScript, rendered in the browser using HTML, and styled with CSS.</n>
-What is the MVP? - the minimal viable product is the game of battleship that renders in web browsers that uses the same exact rules as the board game of battle ship. There should be user input, a game board for each player, functions for playing the game, and feedback from the game if the player has hit a ship or not. (i know this isin’t everything but it is a general idea and how to start off)
-What are nice to haves? - clicking a specific tile to shoot at by using a mouse instead of a key on keyboard for user input, sounds, 
-When will the project be complete? - the project will be complete when all the MVP objectives are met and the battlefield game board has been properly styled so the players can visually tell what is going on.
+- What is the project? - This project will mimic the classic board game of battleship. It will be coded in TypeScript, rendered in the browser using HTML, and styled with CSS.
+- What is the MVP? - the minimal viable product is the game of battleship that renders in web browsers that uses the same exact rules as the board game of battle ship. There should be user input, a game board for each player, functions for playing the game, and feedback from the game if the player has hit a ship or not. (i know this isin’t everything but it is a general idea and how to start off)
+- What are nice to haves? - clicking a specific tile to shoot at by using a mouse instead of a key on keyboard for user input, sounds, 
+- When will the project be complete? - the project will be complete when all the MVP objectives are met and the battlefield game board has been properly styled so the players can visually tell what is going on.
 
 ### Step 2: Creating the workflow (this will be on the project board on GitHub)
 TODO
