@@ -3,13 +3,25 @@
 // properties -> constructor -> methods
 class Gameboard {
     // constructor
-    constructor(length, width) {
-        this.length = length;
-        this.width = width;
+    constructor() {
+        // properties
+        this.length = 10;
+        this.width = 10;
     }
     // methods
-    greet() {
-        console.log("I am literally a gameboard saying hello. dont make no sense boy");
+    drawBlankBoard() {
+        // tell the user the blank board is being drawn
+        console.log(`Drawing a blank board that is ${this.length}x${this.width}`);
+        // draw an empty 10x10 board
+        const array = [];
+        for (let i = 0; i < 10; i++) {
+            array[i] = [];
+            // now established rows, time to do columns
+            for (let j = 0; j < 10; j++) {
+                array[i][j] = `row${i + 1} column${j + 1}`;
+            }
+        }
+        console.log(array);
     }
 }
 export default Gameboard;
