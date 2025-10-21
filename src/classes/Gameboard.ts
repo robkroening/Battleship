@@ -12,7 +12,9 @@ class Gameboard {
     constructor() {}
 
     // methods
-    drawBlankBoard(): void {
+    // row is first[] this column is second[]
+    // so for example array[5][6] --> this is row 6 column 7
+    drawBlankBoard(): any[][] {
         // tell the user the blank board is being drawn
         console.log(`Drawing a blank board that is ${this.length}x${this.width}`);
 
@@ -26,7 +28,13 @@ class Gameboard {
             }
         }
         console.log(array);
+        // console.log(array[5][6]);
+
+        return array;
     }
+
+    // method to show each player's game board right after ships have been placed
+    printStartingBoard(): void {} 
 }
 
 export default Gameboard;

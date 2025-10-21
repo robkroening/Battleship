@@ -9,6 +9,8 @@ class Gameboard {
         this.width = 10;
     }
     // methods
+    // row is first[] this column is second[]
+    // so for example array[5][6] --> this is row 6 column 7
     drawBlankBoard() {
         // tell the user the blank board is being drawn
         console.log(`Drawing a blank board that is ${this.length}x${this.width}`);
@@ -22,6 +24,7 @@ class Gameboard {
             }
         }
         console.log(array);
+        // console.log(array[5][6]);
     }
 }
 export default Gameboard;
