@@ -1,21 +1,5 @@
-// this is the possible values and definitions for everything related to the ships in the battleship game.
-var ShipNames;
-(function (ShipNames) {
-    ShipNames["CARRIER"] = "carrier";
-    ShipNames["BATTLESHIP"] = "battleship";
-    ShipNames["DESTROYER"] = "destroyer";
-    ShipNames["SUBMARINE"] = "submarine";
-    ShipNames["PATROL_BOAT"] = "patrol boat";
-})(ShipNames || (ShipNames = {}));
-// these are the possible values for Ships size
-var ShipSize;
-(function (ShipSize) {
-    ShipSize[ShipSize["CARRIER"] = 5] = "CARRIER";
-    ShipSize[ShipSize["BATTLESHIP"] = 4] = "BATTLESHIP";
-    ShipSize[ShipSize["DESTROYER"] = 3] = "DESTROYER";
-    ShipSize[ShipSize["SUBMARINE"] = 3] = "SUBMARINE";
-    ShipSize[ShipSize["PATROL_BOAT"] = 2] = "PATROL_BOAT";
-})(ShipSize || (ShipSize = {}));
+import { Gameboard } from "./Gameboard.js";
+import { ShipNames, ShipOrientation, ShipSize } from "../enums/ShipEnums.js";
 // this will be the class for the actual ships in the game of battleship.
 class Ship {
     // constructor
@@ -27,7 +11,21 @@ class Ship {
     printShipDetails() {
         console.log(`The name of this ship is ${this.name} and the size of this ship is ${this.shipSize}.`);
     }
+    // place ship
+    // need to specify a user input of coordinates of where the player wants to place the ship
+    placeShip() {
+        // get the blank board
+        // print blank board
+        Gameboard.printBlankBoard();
+        // ask player what ship they want to place
+        // ask player where they want to place the ship
+        // CHECK to see if the ship can be placed here
+        // check for boundaries
+        // check for intersections of other ships
+        // if conditionals are passed, place the ship where specified from user
+        // print the current board after ship has been placed
+    }
 }
 // exports
-export { Ship, ShipNames, ShipSize };
+export { Ship };
 //# sourceMappingURL=Ship.js.map
