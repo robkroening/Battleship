@@ -1,22 +1,10 @@
-declare enum ShipNames {
-    CARRIER = "carrier",
-    BATTLESHIP = "battleship",
-    DESTROYER = "destroyer",
-    SUBMARINE = "submarine",
-    PATROL_BOAT = "patrol boat"
-}
-declare enum ShipSize {
-    CARRIER = 5,
-    BATTLESHIP = 4,
-    DESTROYER = 3,
-    SUBMARINE = 3,
-    PATROL_BOAT = 2
-}
+import { ShipNames, ShipSize } from "../enums/ShipEnums.js";
 declare class Ship {
     name: ShipNames;
     shipSize: ShipSize;
     constructor(name: ShipNames, shipSize: ShipSize);
     printShipDetails(): void;
+    placeShip(): void;
 }
-export { Ship, ShipNames, ShipSize };
+export { Ship };
 //# sourceMappingURL=Ship.d.ts.map

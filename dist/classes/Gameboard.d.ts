@@ -1,8 +1,11 @@
 declare class Gameboard {
-    length: number;
-    width: number;
+    static height: number;
+    static width: number;
     constructor();
-    drawBlankBoard(): void;
+    static drawBlankBoard(): string[][];
+    static printBlankBoard(): void;
+    printStartingBoard(): void;
+    printCurrentGameBoard(): void;
 }
-export default Gameboard;
+export { Gameboard };
 //# sourceMappingURL=Gameboard.d.ts.map

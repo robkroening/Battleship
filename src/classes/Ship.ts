@@ -1,20 +1,5 @@
-// this is the possible values and definitions for everything related to the ships in the battleship game.
-enum ShipNames {
-    CARRIER = "carrier",
-    BATTLESHIP = "battleship",
-    DESTROYER = "destroyer",
-    SUBMARINE = "submarine",
-    PATROL_BOAT = "patrol boat"
-}
-
-// these are the possible values for Ships size
-enum ShipSize {
-    CARRIER = 5,
-    BATTLESHIP = 4,
-    DESTROYER = 3,
-    SUBMARINE = 3,
-    PATROL_BOAT = 2
-}
+import { Gameboard } from "./Gameboard.js";
+import { ShipNames, ShipOrientation, ShipSize } from "../enums/ShipEnums.js";
 
 // this will be the class for the actual ships in the game of battleship.
 class Ship {
@@ -34,8 +19,20 @@ class Ship {
     }
 
     // place ship
-    placeShip(): void {}
+    // need to specify a user input of coordinates of where the player wants to place the ship
+    placeShip(): void {
+        // get the blank board
+        // print blank board
+        Gameboard.printBlankBoard();
+        // ask player what ship they want to place
+        // ask player where they want to place the ship
+        // CHECK to see if the ship can be placed here
+                // check for boundaries
+                // check for intersections of other ships
+        // if conditionals are passed, place the ship where specified from user
+        // print the current board after ship has been placed
+    }
 }
 
 // exports
-export { Ship, ShipNames, ShipSize };
+export { Ship };

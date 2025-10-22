@@ -12,7 +12,11 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@types/prompt-sync": "^4.2.3",
     "typescript": "^5.9.3"
   },
-  "type": "module"
+  "type": "module",
+  "dependencies": {
+    "prompt-sync": "^4.2.0"
+  }
 }
